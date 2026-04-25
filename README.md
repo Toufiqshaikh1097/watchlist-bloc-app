@@ -17,6 +17,39 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Project Overview Here 
 
+## 🏗️ Project Structure
+
+lib/
+│
+├── core/
+│   ├── constants/        # App colors, constants
+│   ├── utils/            # Formatters (date, number)
+│
+├── data/
+│   ├── models/           # Stock model
+│   ├── datasources/      # Dummy data / future API layer
+│
+├── logic/
+│   ├── watchlist/        # Watchlist BLoC (reorder, delete)
+│   ├── market/           # Market BLoC (live simulation)
+│
+├── presentation/
+│   ├── screens/          # Watchlist & Edit screens
+│   ├── widgets/          # Reusable UI components
+│
+└── main.dart             # Entry point
+
+### 📌 Explanation
+
+The project follows a clean architecture approach:
+
+- **core** → Common utilities and constants
+- **data** → Models and data sources
+- **logic** → BLoC state management
+- **presentation** → UI layer (screens & widgets)
+
+This separation improves scalability, maintainability, and testability.
+
 
 ## 🎥 Demo
 
